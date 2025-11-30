@@ -1,5 +1,5 @@
-# deepLink
-deepLink is a python script allowing to list, verify and exploit deeplinks from Android apps using an ADB access or an APK file.
+# NSdeepLink
+Not So deepLink is a python script allowing to list, verify and exploit deeplinks from Android apps using an ADB access or an APK file.
 
 ## Prerequisites
 
@@ -15,38 +15,38 @@ deepLink is a python script allowing to list, verify and exploit deeplinks from 
 ## Install
 
 ```
-$ git clone https://github.com/mathis2001/deepLink
-$ cd deepLink
-$ chmod +x deepLink.py
+$ git clone https://github.com/mathis2001/NSdeepLink
+$ cd NSdeepLink
+$ chmod +x NSdeepLink.py
 ```
 ## Usage
 
 ```
-$ ./deepLink.py [-h] (--adb | --apk APK | -l LAUNCH | -c CODE_SEARCH) [-p PACKAGE] [-s SERIAL] [-v] [-o]
+$ ./NSdeepLink.py [-h] (--adb | --apk APK | -l LAUNCH | -c CODE_SEARCH) [-p PACKAGE] [-s SERIAL] [-v] [-o]
 ```
 
 ### List Deeplinks using ADB
 
 ```
-$ ./deepLink.py --adb -p com.example.xyz [--verify]
+$ ./NSdeepLink.py --adb -p com.example.xyz [--verify]
 ```
 
 ### List Deeplinks from an APK
 
 ```
-$ ./deepLink.py --apk /path/to/app.apk [--verify]
+$ ./NSdeepLink.py --apk /path/to/app.apk [--verify]
 ```
 
 #### Open a specific deeplink
 
 ```
-$ ./deepLink.py -l app://deeplink.xyz
+$ ./NSdeepLink.py -l app://deeplink.xyz
 ```
 
 #### Search for potential deeplinks handling in Java / Kotlin code
 
 ```
-$ ./deepLink.py -c /path/to/project
+$ ./NSdeepLink.py -c /path/to/project
 ```
 
 ## Options
